@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 32px 16px;
+  background: linear-gradient(
+    135deg,
+    #e60bb6,
+    #5e008a,
+    #a30e0e,
+    #00c3e6
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  color: #51ff00;
+  font: 1rem/1.55 system-ui, sans-serif;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: clamp(16px, 4vw, 28px);
+  background: rgb(1, 14, 129);
+  border: 1px solid rgb(1, 14, 129);
+  border-radius: 12px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 16px;
+  color: #dbeb05;
+}
+
+ol {
+  margin: 0;
+  padding-left: 32px;
+}
+
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid #0ddac8;
+}
+
+li:last-child {
+  border-bottom: 0;
+}
